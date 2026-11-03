@@ -197,7 +197,6 @@ function Home() {
             <button className="icon-button" onClick={() => setLightMode((value) => !value)} aria-label="Changer de thème">
               {lightMode ? <Moon size={17} /> : <Sun size={17} />}
             </button>
-            <button className="studio-trigger" onClick={() => setStudioOpen(true)}><Plus size={15} /> Studio JK</button>
             <button className="mobile-menu" onClick={() => setMenuOpen((value) => !value)} aria-label="Ouvrir le menu">
               {menuOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
@@ -245,7 +244,7 @@ function Home() {
           <div className="container">
             <div className="section-heading split-heading">
               <div><SectionEyebrow>01 / Réalisations</SectionEyebrow><h2>Une sélection<br /><em>de réalisations.</em></h2></div>
-              <div className="heading-aside"><p>Des images qui servent<br />une intention. Chaque plan,<br />chaque coupe compte.</p><button className="circle-arrow" onClick={() => setStudioOpen(true)}><Plus size={18} /></button></div>
+              <div className="heading-aside"><p>Des images qui servent<br />une intention. Chaque plan,<br />chaque coupe compte.</p></div>
             </div>
             <div className="project-grid">
               {featuredProjects.map((project, index) => (
@@ -260,7 +259,7 @@ function Home() {
                 </article>
               ))}
             </div>
-            <div className="section-footer"><span>{projects.length} projets affichés</span><button className="outline-button" onClick={() => setStudioOpen(true)}>Ajouter une réalisation <Plus size={16} /></button></div>
+            <div className="section-footer"><span>{projects.length} projets affichés</span><span className="detail-note">Nouvelles réalisations sur demande</span></div>
           </div>
         </section>
 
