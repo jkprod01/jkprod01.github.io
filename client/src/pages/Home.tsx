@@ -52,8 +52,8 @@ const starterProjects: Project[] = [
     category: "Captation live",
     year: "2026",
     description: "Une immersion événementielle qui transforme l’énergie du public, les artistes et les lumières en film vivant — pensé pour donner envie de vivre l’événement.",
-    image: "/manus-storage/JK_PROD_LUMAFEST2_POSTER_7ebb4c1c.jpg",
-    videoUrl: "/manus-storage/JK_PROD_LUMAFEST2_REC709_WEB_575a3f82.mp4",
+    image: "/media/JK_PROD_LUMAFEST2_POSTER_7ebb4c1c.jpg",
+    videoUrl: "/media/JK_PROD_LUMAFEST2_REC709_WEB_575a3f82.mp4",
   },
   {
     id: "ddk-concert",
@@ -61,8 +61,8 @@ const starterProjects: Project[] = [
     category: "Captation live",
     year: "2026",
     description: "Une captation rythmée qui restitue la puissance de la scène, la lumière et la connexion entre l’artiste et son public.",
-    image: "/manus-storage/DDK-concert-best_8f6ae001.jpg",
-    videoUrl: "/manus-storage/JK_PROD_DDK_CONCERT_REEL_60S_REC709_7add4d68.mp4",
+    image: "/media/DDK-concert-best_8f6ae001.jpg",
+    videoUrl: "/media/JK_PROD_DDK_CONCERT_REEL_60S_REC709_7add4d68.mp4",
   },
   {
     id: "unijed",
@@ -70,8 +70,8 @@ const starterProjects: Project[] = [
     category: "Film institutionnel",
     year: "2026",
     description: "Un film institutionnel clair et humain pour faire comprendre une mission, valoriser une organisation et créer la confiance.",
-    image: "/manus-storage/unijed-best_e8423e2f.jpg",
-    videoUrl: "/manus-storage/JK_PROD_UNIJED_WEB_30S_REC709_9c189881.mp4",
+    image: "/media/unijed-best_e8423e2f.jpg",
+    videoUrl: "/media/JK_PROD_UNIJED_WEB_30S_REC709_9c189881.mp4",
   },
   {
     id: "mariage-ouedraogo",
@@ -79,9 +79,9 @@ const starterProjects: Project[] = [
     category: "Film événementiel",
     year: "2026",
     description: "Un film émotionnel construit sur les regards, les détails et les instants forts pour conserver l’intensité d’une journée unique.",
-    image: "/manus-storage/mariage-ouedraogo-best_c9855ef8.jpg",
-    videoUrl: "/manus-storage/JK_PROD_WEDDING_REEL_60S_REC709_aacbbf67.mp4",
-    detailImage: "/manus-storage/wedding-rings-detail_081b1a89.jpg",
+    image: "/media/mariage-ouedraogo-best_c9855ef8.jpg",
+    videoUrl: "/media/JK_PROD_WEDDING_REEL_60S_REC709_aacbbf67.mp4",
+    detailImage: "/media/wedding-rings-detail_081b1a89.jpg",
   },
   {
     id: "nak-30-ans",
@@ -89,8 +89,8 @@ const starterProjects: Project[] = [
     category: "Film événementiel",
     year: "2026",
     description: "Un récit de festival qui mêle culture, public et transmission pour donner à une identité locale une image forte et mémorable.",
-    image: "/manus-storage/nak-30-ans-best_7440ca94.jpg",
-    videoUrl: "/manus-storage/JK_PROD_NAK_ANNIVERSAIRE_CANON_REEL_60S_REC709_ee814bb6.mp4",
+    image: "/media/nak-30-ans-best_7440ca94.jpg",
+    videoUrl: "/media/JK_PROD_NAK_ANNIVERSAIRE_CANON_REEL_60S_REC709_ee814bb6.mp4",
   },
 ];
 
@@ -275,7 +275,7 @@ function Home() {
         <section className="about-section section-pad" id="a-propos">
           <div className="container about-grid">
             <div className="about-label"><SectionEyebrow>03 / À propos</SectionEyebrow><span className="about-stamp">JK<br /><small>PROD</small></span></div>
-            <figure className="about-main-portrait"><img src="/manus-storage/jefferson-portrait-highres_b22534a5.webp" alt="Jefferson KONE, cadreur-monteur et vidéaste" /><figcaption><span>JEFFERSON KONE</span><strong>Le regard derrière la caméra.</strong></figcaption></figure>
+            <figure className="about-main-portrait"><img src="/media/jefferson-portrait-highres_b22534a5.webp" alt="Jefferson KONE, cadreur-monteur et vidéaste" /><figcaption><span>JEFFERSON KONE</span><strong>Le regard derrière la caméra.</strong></figcaption></figure>
             <div className="about-content"><h2>L’image comme<br /><em>langage.</em></h2><p className="about-lead">Je m’appelle <strong>Jefferson KONE</strong>, cadreur-monteur et vidéaste basé à Ouagadougou, au Burkina Faso.</p><p>Passionné par l’image et la narration audiovisuelle, je transforme les idées, les événements et les histoires en contenus visuels vivants, précis et mémorables.</p><p>Mon expérience chez Showtools Experience Burkina et We Are Group m’a permis de participer à des films institutionnels, des captations d’événements, des documentaires, des clips et des contenus de communication.</p><blockquote>Une image forte.<br /><strong>Un montage précis. Une histoire qui reste.</strong></blockquote><button className="text-link" onClick={() => scrollTo("contact")}>Travaillons ensemble <ArrowUpRight size={16} /></button></div>
           </div>
         </section>
@@ -283,8 +283,8 @@ function Home() {
         <section className="journey-section section-pad" id="parcours">
           <div className="container journey-grid">
             <div className="portrait-panel about-photo-collage">
-              <figure className="about-photo about-photo--portrait"><img src="/manus-storage/jefferson-portrait-highres_b22534a5.webp" alt="Portrait de Jefferson KONE avec sa caméra et son stabilisateur" /><figcaption><span>01 / IDENTITÉ</span><strong>Le regard avant l’image.</strong></figcaption></figure>
-              <figure className="about-photo about-photo--field"><img src="/manus-storage/jefferson-field-retouched_a9bff046.webp" alt="Jefferson KONE en tournage extérieur avec un stabilisateur" /><figcaption><span>02 / TERRAIN</span><strong>La maîtrise en mouvement.</strong></figcaption></figure>
+              <figure className="about-photo about-photo--portrait"><img src="/media/jefferson-portrait-highres_b22534a5.webp" alt="Portrait de Jefferson KONE avec sa caméra et son stabilisateur" /><figcaption><span>01 / IDENTITÉ</span><strong>Le regard avant l’image.</strong></figcaption></figure>
+              <figure className="about-photo about-photo--field"><img src="/media/jefferson-field-retouched_a9bff046.webp" alt="Jefferson KONE en tournage extérieur avec un stabilisateur" /><figcaption><span>02 / TERRAIN</span><strong>La maîtrise en mouvement.</strong></figcaption></figure>
               <div className="about-photo-signature"><span>JK PROD</span><small>CADREUR · MONTEUR · VIDÉASTE</small></div>
             </div>
             <div className="journey-copy">
@@ -296,7 +296,7 @@ function Home() {
                 <div className="timeline-item"><span>02</span><div><strong>We Are Group</strong><small>Assistant cadreur — monteur</small></div><time>Expérience</time></div>
                 <div className="timeline-item timeline-item--active"><span>03</span><div><strong>Freelance / JK Prod</strong><small>Cadreur — monteur indépendant</small></div><time>Aujourd’hui</time></div>
               </div>
-              <div className="cv-downloads"><a className="outline-button" href="/manus-storage/CV-Jefferson-KONE-ATS-Audiovisuel_04650878.pdf" target="_blank" rel="noreferrer" download="CV-Jefferson-KONE-ATS-Audiovisuel.pdf"><Download size={16} /> CV ATS audiovisuel</a><a className="text-link" href="/manus-storage/main_c82a976b.pdf" target="_blank" rel="noreferrer" download="CV-Jefferson-KONE.pdf">CV portfolio visuel <ExternalLink size={15} /></a></div>
+              <div className="cv-downloads"><a className="outline-button" href="/media/CV-Jefferson-KONE-ATS-Audiovisuel_04650878.pdf" target="_blank" rel="noreferrer" download="CV-Jefferson-KONE-ATS-Audiovisuel.pdf"><Download size={16} /> CV ATS audiovisuel</a><a className="text-link" href="/media/main_c82a976b.pdf" target="_blank" rel="noreferrer" download="CV-Jefferson-KONE.pdf">CV portfolio visuel <ExternalLink size={15} /></a></div>
             </div>
           </div>
         </section>
@@ -332,9 +332,9 @@ function Home() {
         </section>
       </main>
 
-      {showreelOpen && <div className="studio-backdrop" role="dialog" aria-modal="true" aria-label="Showreel JK Prod"><div className="showreel-panel"><button className="studio-close" onClick={() => setShowreelOpen(false)} aria-label="Fermer"><X size={20} /></button><div className="showreel-video-wrap"><video controls preload="metadata" playsInline src="/manus-storage/JK_PROD_SHOWREEL_CINEMA_PREMIUM_27S_3670eeac.mp4" /></div><div className="showreel-footer"><span><strong>JK Prod — Cinema Premium.</strong> Un montage sobre et immersif qui relie scène, culture, transmission et émotion avec une image étalonnée Rec.709.</span><div className="showreel-links"><a className="text-link" href="/manus-storage/JK_PROD_SHOWREEL_CINEMA_PREMIUM_27S_3670eeac.mp4" target="_blank" rel="noreferrer" download="JK-PROD-SHOWREEL-CINEMA-PREMIUM-27S.mp4">Télécharger le showreel <ExternalLink size={15} /></a><button className="outline-button" onClick={() => { setShowreelOpen(false); scrollTo("contact"); }}>Parlons de votre projet <ArrowUpRight size={15} /></button></div></div></div></div>}
+      {showreelOpen && <div className="studio-backdrop" role="dialog" aria-modal="true" aria-label="Showreel JK Prod"><div className="showreel-panel"><button className="studio-close" onClick={() => setShowreelOpen(false)} aria-label="Fermer"><X size={20} /></button><div className="showreel-video-wrap"><video controls preload="metadata" playsInline src="/media/JK_PROD_SHOWREEL_CINEMA_PREMIUM_27S_3670eeac.mp4" /></div><div className="showreel-footer"><span><strong>JK Prod — Cinema Premium.</strong> Un montage sobre et immersif qui relie scène, culture, transmission et émotion avec une image étalonnée Rec.709.</span><div className="showreel-links"><a className="text-link" href="/media/JK_PROD_SHOWREEL_CINEMA_PREMIUM_27S_3670eeac.mp4" target="_blank" rel="noreferrer" download="JK-PROD-SHOWREEL-CINEMA-PREMIUM-27S.mp4">Télécharger le showreel <ExternalLink size={15} /></a><button className="outline-button" onClick={() => { setShowreelOpen(false); scrollTo("contact"); }}>Parlons de votre projet <ArrowUpRight size={15} /></button></div></div></div></div>}
 
-      {activeProject && <div className="studio-backdrop" role="dialog" aria-modal="true" aria-label={`Projet ${activeProject.title}`}><div className="project-detail-panel"><button className="studio-close" onClick={() => setActiveProject(null)} aria-label="Fermer"><X size={20} /></button><div className="project-detail-image"><img src={activeProject.image} alt="" /><span>{activeProject.year}</span></div><div className="project-detail-copy"><SectionEyebrow>{activeProject.category}</SectionEyebrow><h2>{activeProject.title}</h2><p className="project-role">{projectRoles[activeProject.category] || "Image · Montage · Direction artistique"}</p><p>{activeProject.description}</p>{activeProject.detailImage && <img className="project-detail-still" src={activeProject.detailImage} alt="Détail visuel du projet" />}{activeProject.videoUrl && activeProject.videoUrl.startsWith("/manus-storage/") && <div className="project-detail-video"><video controls preload="metadata" playsInline src={activeProject.videoUrl} /></div>}<div className="project-detail-actions">{activeProject.videoUrl && activeProject.videoUrl !== "#" ? (activeProject.videoUrl.startsWith("/manus-storage/") ? <span className="detail-note">Lecture directe — réalisation JK Prod</span> : <a className="primary-button" href={activeProject.videoUrl} target="_blank" rel="noreferrer"><Play size={15} fill="currentColor" /> Voir la vidéo</a>) : <button className="outline-button" onClick={() => { setActiveProject(null); setStudioOpen(true); }}>Ajouter le lien vidéo <ExternalLink size={15} /></button>}<span className="detail-note">Projet présenté par JK Prod</span></div></div></div></div>}
+      {activeProject && <div className="studio-backdrop" role="dialog" aria-modal="true" aria-label={`Projet ${activeProject.title}`}><div className="project-detail-panel"><button className="studio-close" onClick={() => setActiveProject(null)} aria-label="Fermer"><X size={20} /></button><div className="project-detail-image"><img src={activeProject.image} alt="" /><span>{activeProject.year}</span></div><div className="project-detail-copy"><SectionEyebrow>{activeProject.category}</SectionEyebrow><h2>{activeProject.title}</h2><p className="project-role">{projectRoles[activeProject.category] || "Image · Montage · Direction artistique"}</p><p>{activeProject.description}</p>{activeProject.detailImage && <img className="project-detail-still" src={activeProject.detailImage} alt="Détail visuel du projet" />}{activeProject.videoUrl && activeProject.videoUrl.startsWith("/media/") && <div className="project-detail-video"><video controls preload="metadata" playsInline src={activeProject.videoUrl} /></div>}<div className="project-detail-actions">{activeProject.videoUrl && activeProject.videoUrl !== "#" ? (activeProject.videoUrl.startsWith("/media/") ? <span className="detail-note">Lecture directe — réalisation JK Prod</span> : <a className="primary-button" href={activeProject.videoUrl} target="_blank" rel="noreferrer"><Play size={15} fill="currentColor" /> Voir la vidéo</a>) : <button className="outline-button" onClick={() => { setActiveProject(null); setStudioOpen(true); }}>Ajouter le lien vidéo <ExternalLink size={15} /></button>}<span className="detail-note">Projet présenté par JK Prod</span></div></div></div></div>}
 
       {studioOpen && <div className="studio-backdrop" role="dialog" aria-modal="true" aria-label="Studio JK">
         <div className="studio-panel">
