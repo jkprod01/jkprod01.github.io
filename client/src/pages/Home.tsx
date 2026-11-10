@@ -311,7 +311,7 @@ function Home() {
                   return <div className="skill-row" key={label as string}><IconComponent size={17} /><span>{label as string}</span><div className="skill-line"><i style={{ width: `${86 - index * 7}%` }} /></div><b>{86 - index * 7}%</b></div>;
                 })}
               </div>
-              <div className="tool-stack"><p>Outils de travail</p><div className="tool-cards"><span>Pr</span><span>Ae</span><span>Ps</span><span>DaV</span><span>LR</span></div><div className="gear-note"><Film size={19} /><span>Une chaîne de production légère,<br />pensée pour raconter juste.</span></div></div>
+              <div className="tool-stack"><p>Outils maîtrisés</p><div className="tool-cards"><span title="Canva">Ca</span><span title="Adobe Premiere Pro">Pr</span><span title="Adobe After Effects">Ae</span><span title="Adobe Lightroom">Lr</span><span title="Outils d’intelligence artificielle">IA</span></div><div className="gear-note"><Film size={19} /><span>Canva, montage, retouche et IA<br />au service d’une image juste.</span></div></div>
             </div>
           </div>
         </section>
