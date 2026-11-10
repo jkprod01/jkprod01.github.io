@@ -92,6 +92,24 @@ const starterProjects: Project[] = [
     image: "/media/nak-30-ans-best_7440ca94.jpg",
     videoUrl: "/media/JK_PROD_NAK_ANNIVERSAIRE_CANON_REEL_60S_REC709_ee814bb6.mp4",
   },
+  {
+    id: "gogo-oryx",
+    title: "GOGO ORYX",
+    category: "Film événementiel",
+    year: "2026",
+    description: "Un film événementiel qui documente les prises de parole, les temps forts et l’énergie collective avec une narration claire et professionnelle.",
+    image: "/media/gogo-oryx.jpg",
+    videoUrl: "/media/gogo-oryx.mp4",
+  },
+  {
+    id: "moov-jeff",
+    title: "MOOV JEFF",
+    category: "Film événementiel",
+    year: "2026",
+    description: "Un format court et dynamique qui rassemble terrain, mouvement et public pour donner à l’événement une image vivante et mémorable.",
+    image: "/media/moov-jeff.jpg",
+    videoUrl: "/media/moov-jeff.mp4",
+  },
 ];
 
 const navItems = [
@@ -154,8 +172,8 @@ function Home() {
 
   const featuredProjects = useMemo(() => {
     const lumafest = projects.find((project) => project.id === "lumafest-2");
-    if (!lumafest) return projects.slice(0, 5);
-    return [lumafest, ...projects.filter((project) => project.id !== "lumafest-2")].slice(0, 5);
+    if (!lumafest) return projects.slice(0, 7);
+    return [lumafest, ...projects.filter((project) => project.id !== "lumafest-2")].slice(0, 7);
   }, [projects]);
 
   function scrollTo(id: string) {
@@ -243,7 +261,7 @@ function Home() {
 
         <section className="trust-strip" aria-label="Repères JK Prod">
           <div className="container trust-strip-inner">
-            <div><strong>05</strong><span>réalisations<br />sélectionnées</span></div>
+            <div><strong>07</strong><span>réalisations<br />sélectionnées</span></div>
             <div><strong>REC.709</strong><span>image soignée<br />et prête à diffuser</span></div>
             <div><strong>BF</strong><span>Ouagadougou<br />et projets à distance</span></div>
           </div>
@@ -302,7 +320,7 @@ function Home() {
               <div className="timeline">
                 <div className="timeline-item"><span>01</span><div><strong>Showtools Experience Burkina</strong><small>Assistant cadreur — monteur</small></div><time>Expérience</time></div>
                 <div className="timeline-item"><span>02</span><div><strong>We Are Group</strong><small>Assistant cadreur — monteur</small></div><time>Expérience</time></div>
-                <div className="timeline-item timeline-item--active"><span>03</span><div><strong>Freelance / JK Prod</strong><small>Cadreur — monteur indépendant</small></div><time>Aujourd’hui</time></div>
+                <div className="timeline-item timeline-item--active"><span>03</span><div><strong>Projets personnels / JK Prod</strong><small>Réalisations et contenus sélectionnés</small></div><time>En parallèle</time></div>
               </div>
               <div className="cv-downloads"><a className="outline-button" href="/media/CV-Jefferson-KONE-ATS-Audiovisuel_04650878.pdf" target="_blank" rel="noreferrer" download="CV-Jefferson-KONE-ATS-Audiovisuel.pdf"><Download size={16} /> CV ATS audiovisuel</a><a className="text-link" href="/media/main_c82a976b.pdf" target="_blank" rel="noreferrer" download="CV-Jefferson-KONE.pdf">CV portfolio visuel <ExternalLink size={15} /></a></div>
             </div>
@@ -324,7 +342,7 @@ function Home() {
           </div>
         </section>
 
-        <section className="numbers-section"><div className="container numbers-grid"><div><strong>PLUSIEURS</strong><span>projets réalisés</span></div><div><strong>3</strong><span>expériences fortes</span></div><div><strong>100%</strong><span>engagement</span></div><div><strong>BF</strong><span>basé à Ouagadougou</span></div></div></section>
+        <section className="numbers-section"><div className="container numbers-grid"><div><strong>PLUSIEURS</strong><span>projets réalisés</span></div><div><strong>100%</strong><span>engagement</span></div><div><strong>BF</strong><span>basé à Ouagadougou</span></div></div></section>
 
         <section className="contact-section section-pad" id="contact">
           <div className="container contact-grid">
