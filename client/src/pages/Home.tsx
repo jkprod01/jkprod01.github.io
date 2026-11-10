@@ -241,6 +241,14 @@ function Home() {
           </div>
         </section>
 
+        <section className="trust-strip" aria-label="Repères JK Prod">
+          <div className="container trust-strip-inner">
+            <div><strong>05</strong><span>réalisations<br />sélectionnées</span></div>
+            <div><strong>REC.709</strong><span>image soignée<br />et prête à diffuser</span></div>
+            <div><strong>BF</strong><span>Ouagadougou<br />et projets à distance</span></div>
+          </div>
+        </section>
+
         <section className="work-section section-pad" id="realisations">
           <div className="container">
             <div className="section-heading split-heading">
