@@ -248,7 +248,7 @@ function Home() {
             <div className="hero-copy reveal-up">
               <p className="hero-kicker"><span className="pulse-dot" /> Cadreur · Monteur · Vidéaste</p>
               <h1>Je capte<br /><em>l’essentiel.</em><br />Je raconte<br /><em>vos histoires.</em></h1>
-              <p className="hero-description">Une image forte. Un montage précis.<br />Au service de vos projets audiovisuels.</p>
+              <p className="hero-description">Cadreur-monteur et vidéaste à Ouagadougou.<br />Captation événementielle, films institutionnels et montage vidéo.</p>
               <div className="hero-actions">
                 <button className="primary-button" onClick={() => setShowreelOpen(true)}><Play size={16} fill="currentColor" /> Voir le showreel</button>
                 <a className="hero-whatsapp" href="https://wa.me/22660425060" target="_blank" rel="noreferrer"><MessageCircle size={16} /> Discuter sur WhatsApp</a>
