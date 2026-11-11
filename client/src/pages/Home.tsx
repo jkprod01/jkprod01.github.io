@@ -181,6 +181,23 @@ function Home() {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   }
 
+  function handleContactSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    const name = String(data.get("name") || "").trim();
+    const projectType = String(data.get("projectType") || "").trim();
+    const timing = String(data.get("timing") || "").trim();
+    const message = String(data.get("message") || "").trim();
+    const whatsappMessage = [
+      "Bonjour JK Prod, je souhaite discuter d’un projet.",
+      `Nom : ${name}`,
+      `Projet : ${projectType}`,
+      `Délai : ${timing}`,
+      `Message : ${message}`,
+    ].join("\n");
+    window.open(`https://wa.me/22660425060?text=${encodeURIComponent(whatsappMessage)}`, "_blank", "noopener,noreferrer");
+  }
+
   function handleProjectSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!newProject.title.trim()) return;
@@ -353,6 +370,19 @@ function Home() {
               <a href="mailto:jkprod226@gmail.com" className="contact-card"><Mail size={20} /><span>Email</span><strong>jkprod226@gmail.com</strong><ArrowUpRight size={16} /></a>
               <a href="https://www.tiktok.com/@jk_prod1" className="contact-card" target="_blank" rel="noreferrer"><span className="social-letter">Tk</span><span>TikTok</span><strong>@jk_prod1</strong><ArrowUpRight size={16} /></a>
             </div>
+            <form className="contact-form" onSubmit={handleContactSubmit}>
+              <div className="contact-form-heading"><span>Demande rapide</span><strong>Parlons de votre projet.</strong></div>
+              <div className="contact-form-row">
+                <label>Votre nom<input name="name" required placeholder="Nom et prénom" /></label>
+                <label>Type de projet<select name="projectType" defaultValue="Film / vidéo"><option>Film / vidéo</option><option>Captation événementielle</option><option>Clip / contenu réseaux sociaux</option><option>Montage / post-production</option><option>Autre demande</option></select></label>
+              </div>
+              <div className="contact-form-row">
+                <label>Délai souhaité<select name="timing" defaultValue="À définir ensemble"><option>À définir ensemble</option><option>Cette semaine</option><option>Ce mois-ci</option><option>Le mois prochain</option></select></label>
+                <label>Votre message<textarea name="message" required rows={3} placeholder="Parlez-moi brièvement de votre besoin…" /></label>
+              </div>
+              <button className="primary-button contact-submit" type="submit"><MessageCircle size={16} /> Envoyer sur WhatsApp</button>
+              <small className="contact-form-note">Le bouton ouvre WhatsApp avec votre demande déjà préparée.</small>
+            </form>
           </div>
           <div className="container contact-footer"><LogoMark compact /><div className="social-links"><a href="https://www.tiktok.com/@jk_prod1" target="_blank" rel="noreferrer">TikTok</a><a href="https://www.facebook.com/share/1cW8BnfyB3/" target="_blank" rel="noreferrer">Facebook</a><a href="mailto:jkprod226@gmail.com">Email</a></div><span className="copyright">© 2026 JK Prod — Jefferson KONE</span></div>
         </section>
