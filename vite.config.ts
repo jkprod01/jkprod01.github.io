@@ -203,9 +203,19 @@ function vitePluginStorageProxy(): Plugin {
   };
 }
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
+export default defineConfig(({ command }) => {
+  // The Manus runtime is useful in the local preview, but it injects a large
+  // inline bundle that is unnecessary on the standalone GitHub Pages build.
+  const plugins = [
+    react(),
+    tailwindcss(),
+    jsxLocPlugin(),
+    ...(command === "serve" ? [vitePluginManusRuntime()] : []),
+    vitePluginManusDebugCollector(),
+    vitePluginStorageProxy(),
+  ];
 
-export default defineConfig({
+  return {
   plugins,
   base: process.env.VITE_BASE_PATH || "/",
   resolve: {
@@ -239,4 +249,5 @@ export default defineConfig({
       deny: ["**/.*"],
     },
   },
+  };
 });
